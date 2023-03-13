@@ -4,30 +4,30 @@
         <link href='./netflixstyle.css' rel='stylesheet'>
         <title>Netflix</title>
     </head>
-    <body>
-        <header>
-            <nav> 
-                <section class="netflix-icon">
+        <body>
+            <div class="header">
+                <nav> 
                     <img 
                         class="netflix-image"
-                        src="netflix/netflix.png"
-                        alt="netflix">
-                    <form>
-                        <img 
-                            class="globe"
-                            src="netflix/globe.jpg"
-                            alt="globe">
-                        <div class="buttons">
-                            <label class="dropdown" for="language"></label>
-                                <select id="language" name="language">
-                                <option value="English">English</option>
-                                <option value="Francais">Francais</option> 
-                                </select>
-                            <button type="submit">Sign In</button>
-                        </div>
-                    </form>
-                </section>
+                        src="netflix/netflixicon.avif">
+                        <label for="language"></label>
+                        <select id="dropdown">
+                            <option value="English">English</option>
+                            <option value="Francais">Francais</option>
+                        </select>
+                    <div class="buttons">
+                        <button type="submit">Sign In</button>
+                </div>
             </nav>
-        </header>
+            <div class="header-content">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <form class="emailsignup">
+                    <input type="text" placeholder="Email Address" required>
+                    <button type="submit">Get Started ></button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
