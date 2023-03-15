@@ -128,10 +128,14 @@ h3 {
 
 /*---------features--------*/
 
-.features {
-    text-align: left; 
+.features { 
     padding: 50px 12%;
     font-family: sans-serif;
+}
+
+.text-col {
+    flex-basis: 50%; 
+    margin-bottom: 20px;
 }
 
 .row {
@@ -142,8 +146,7 @@ h3 {
     padding: 50px 0; 
 }
 
-h2 {
-    display: block;
+.features h2 {
     font-size: 3rem; 
     font-weight: 900; 
     margin-block-start: 0.83em;
@@ -163,24 +166,78 @@ p {
     margin-block-end: 0px;
 }
 
-.text-col {
-    flex-basis: 50%; 
-    margin-bottom: 20px;
-}
-
 .parent {
+    position: relative;
     flex-basis: 50%;
     margin-bottom: 20px;
+    top: 0;
+    left: 0;
 }
 
 .parent img {
     display: block;
-    width: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
     margin: auto;
 }
 
 .parent video {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%; 
+    top: 90px;; 
+    left: 80px;
+
+}
+
+.newparent {
+    position: relative;
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+}
+
+.newparent img {
     display: block;
-    width: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
     margin: auto;
 }
+
+.newparent video {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%; 
+    top: 70px; 
+    left: 100px;
+}
+
+.parent input {
+    padding: 0.5rem 0.75rem; 
+    overflow: hidden;
+    position: absolute; 
+    margin: 0 auto; 
+    background: rgba(0,0,0,1);
+    display: flex; 
+    align-items: center; 
+    width: 55%; 
+    height: 20%;
+    min-width: 15rem; 
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 0.75rem; 
+    z-index: 1; 
+    bottom: 5%;
+    left: 22%;
+}
+
