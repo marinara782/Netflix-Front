@@ -3,6 +3,7 @@
     padding: 0; 
     box-sizing: border-box;
     font-size: 14px;
+    font-family: sans-serif;
 }
 
 body {
@@ -39,7 +40,6 @@ nav button {
     background: #db0001;
     color: #fff; 
     padding: 7px 20px; 
-    font-size: 14px; 
     border-radius: 4px; 
     margin-left: 10px;
     cursor: pointer;
@@ -54,7 +54,6 @@ nav button {
     padding: 5px; 
     background: transparent;
     color: #fff;
-    font-size: 14px; 
     border-radius: 4px;
     position: absolute;
     left: 1050px;
@@ -68,7 +67,6 @@ nav button {
     transform: translate(-50%, -50%);
     text-align: center; 
     margin-top: 100px;
-    font-family: sans-serif;
 }
 
 h1 {
@@ -121,7 +119,6 @@ h3 {
     border: 0;
     outline: 0; 
     color: #fff;
-    font-size: 14px; 
     cursor: pointer;
     padding: 17px 30px; 
 }
@@ -130,7 +127,6 @@ h3 {
 
 .features { 
     padding: 50px 12%;
-    font-family: sans-serif;
 }
 
 .text-col {
@@ -294,3 +290,113 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.list {
+    margin: 60px auto; 
+    width: 100%;
+}
+
+.list li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.list li label {
+    display: flex; 
+    align-items: center;
+    padding: 20px; 
+    font-size: 18px; 
+    font-weight: 500; 
+    margin-bottom: 0.0625rem;  
+    background-color: rgba(45, 45, 45, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.list label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute; 
+    right: 20px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.list .content {
+    font-size: 1.5rem;
+    font-weight: 400;
+    overflow: hidden; 
+    visibility: visible; 
+    max-height: 0px; 
+    padding: 0px 1.5rem; 
+    text-align: left; 
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    transition: all 0.25s;
+}
+
+.list .content a {
+    color: rgb(255, 255, 255);
+    border-radius: 0.125rem;
+}
+
+.list input[type="radio"]:checked + label + .content {
+    max-height: 600px; 
+    padding: 30px 20px;
+}
+
+.list input[type="radio"]:checked + label::after {
+    transform: rotate(-45deg);
+}
+
+.faq .emailsignup {
+    display: flex;
+    text-align: left; 
+    position: relative; 
+    margin: 1rem auto 0; 
+    width: 100%; 
+    max-width: 36.625rem;
+}
+
+.faq h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: 400; 
+    font-size: 1.25rem; 
+}
+
+footer {
+    padding: 0rem; 
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.small-header p {
+    padding-top: 0.75rem; 
+    padding-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.small-header a {
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.125rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin: 0rem; 
+    padding: 0rem; 
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+    
