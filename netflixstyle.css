@@ -370,9 +370,11 @@ input[type="radio"]{
 }
 
 footer {
-    padding: 0rem; 
+    padding: 50px 15% 10px; 
     background-color: transparent;
     color: rgba(255, 255, 255, 0.7);
+    border-top: 8px solid #333;
+    margin-top: 60px;
 }
 
 .small-header p {
@@ -394,9 +396,34 @@ footer {
     font-weight: 400;
 }
 
-.footer col {
+.col {
     flex-basis: 25%;
     flex-grow: 1;
     margin-bottom: 20px;
 }
-    
+
+.col a {
+    display: block; 
+    appearance: none;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.125rem;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+#footer-dropdown {
+    padding: 10px 20px; 
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    position: absolute;
+    overflow: auto;
+}
