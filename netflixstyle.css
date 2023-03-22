@@ -360,6 +360,7 @@ input[type="radio"]{
     margin: 1rem auto 0; 
     width: 100%; 
     max-width: 36.625rem;
+    border-radius: 4px;  
 }
 
 .faq h3 {
@@ -424,6 +425,10 @@ footer {
     background: transparent;
     color: rgb(255, 255, 255);
     border-radius: 4px;
-    position: absolute;
     overflow: auto;
+}
+
+.footer-text {
+    margin-top: 20px; 
+    margin-bottom: 10px;
 }
